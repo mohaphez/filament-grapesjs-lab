@@ -3,7 +3,7 @@
 
 1. Clone the repository
 ```bash
-  git clone 
+  git clone https://github.com/mohaphez/filament-grapesjs-lab.git
 ```
 2. Open the terminal and navigate to the repository
 3. Run the following command to install the required packages
