@@ -30,3 +30,12 @@ docker run --rm \
 ```bash
    ./vendor/bin/sail composer dump
 ```
+
+7. Access to admin panel with this url and credential
+
+```bash
+http://localhost/admin
+
+Username: admin@example.com
+Password: password
+```
