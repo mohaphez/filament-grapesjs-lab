@@ -6,7 +6,8 @@
   git clone https://github.com/mohaphez/filament-grapesjs-lab.git
 ```
 2. Open the terminal and navigate to the repository
-3. Run the following command to install the required packages
+
+4. Run the following command to install the required packages
 ```bash
 docker run --rm \
     -u "$(id -u):$(id -g)" \
@@ -16,19 +17,29 @@ docker run --rm \
     composer install --ignore-platform-reqs
 ```
 
-4. Run the following command to start the server
+5. Run the following command to start the server
 ```bash
 ./vendor/bin/sail up -d
 ```
 
-5. Run the following command to install the node packages
+6. Run the following command to start the server
+```bash
+./vendor/bin/sail composer update
+```
+
+7. Run the following command to install the node packages
 ```bash
 ./vendor/bin/sail npm -C packages/filament-grapesjs-v3 install 
 ```
 
+8. Run the following command to npm run dev
+```bash
+./vendor/bin/sail npm -C packages/filament-grapesjs-v3 run dev
+```
+
 6. Run the following command to build the assets
 ```bash
-   ./vendor/bin/sail composer dump
+   ./vendor/bin/sail artisan filament:assets
 ```
 
 7. Access to admin panel with this url and credential
