@@ -37,12 +37,12 @@ docker run --rm \
 ./vendor/bin/sail npm -C packages/filament-grapesjs-v3 run dev
 ```
 
-6. Run the following command to build the assets
+9. Run the following command to build the assets
 ```bash
    ./vendor/bin/sail artisan filament:assets
 ```
 
-7. Access to admin panel with this url and credential
+10. Access to admin panel with this url and credential
 
 ```bash
 http://localhost/admin
