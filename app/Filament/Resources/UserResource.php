@@ -25,7 +25,7 @@ class UserResource extends Resource
         return $form
             ->columns(1)
             ->schema([
-                GrapesJs::make('page_layout')
+                GrapesJs::make('content')
                     ->id('page_layout'),
 //                    ->toolbarOptions([
 //                        'gjs-preset-webpage',

@@ -9,13 +9,16 @@ document.addEventListener('alpine:init', () => {
                 let enabledTools = {};
 
                 this.instance =  grapesjs.init({
-                    height: minHeight + 'px',
+                    height: '10px',
                     container: container ? container : ".filament-grapesjs .grapesjs-wrapper",
                     showOffsets: true,
                     fromElement: true,
                     noticeOnUnload: false,
                     storageManager: false,
                     loadHtml: state,
+                    selectorManager: {
+                        escapeName: name => name
+                    },
                     plugins: [
                         "grapesjs-tailwind",
                     ],
